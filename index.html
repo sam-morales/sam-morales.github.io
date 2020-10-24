@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Samuel Morales Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -41,9 +41,8 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a href="https://www.linkedin.com/in/samuel-morales-lssgb/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/sam-morales" class="icon brands fa-github"><span class="label">Github</span></a></li>
 						</ul>
 
 				</div>
@@ -59,7 +58,7 @@
 
 							<header>
 								<h2 class="alt">Hi! My name is Samuel Morales.</h2>
-								<p>Mechanical Engineer turned coder, I am passionate about machine vision,<br />
+								<p>Mechanical Engineer turned coder; I am passionate about machine vision,<br />
 								automation and deep learning. Please check out some of my projects below!</p>
 							</header>
 
@@ -136,14 +135,19 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/actuator.png" alt="" /></a>
 
-							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-							ornare iaculis.</p>
+							<p>I am a machine vision engineer specializing in developing turnkey machine vision applications for a variety of
+								customers mainly in the life sciences industries. I take pride in being involved with
+								projects from design to delivery and love the challenges presented by this field.
+							</p>
+							<p>I studied Mechanical Engineering at the University of Guelph where I graduated with
+								distinction. I discovered machine vision through the University's co-op program where I interned
+								with ATS Automation. I have also obtained a Lean Six Sigma Green Belt as part of an effort to implement lean methodologies
+								in my work.
+							</p>
+							<p>In my spare time I enjoy cooking, reading and airsoft.
+							</p>
 
 						</div>
 					</section>
@@ -160,15 +164,25 @@
 								or use the link on the left to find me on LinkedIn!
 							</p>
 
-							<form method="post" action="#">
+							 <!-- Starting of successful form message -->
+							<div class="row">
+								<div class="col-12">
+									<div class="alert alert-success contact__msg" style="display: none" role="alert">
+										Your message was sent successfully.
+									</div>
+								</div>
+							</div>
+							<!-- Ending of successful form message -->
+
+							<form class="contact__form" method="post" action="mailer.php">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" id="name" name="name" required placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" id="email" name="email" required placeholder="Email" /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea id="message" name="message" required placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<input name="submit" type="submit" value="Send Message" />
 									</div>
 								</div>
 							</form>
@@ -183,7 +197,7 @@
 
 				<!-- Copyright -->
 					<ul class="copyright">
-						<li>&copy; Samuel Morales</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Made by Samuel Morales</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 
 			</div>
@@ -196,6 +210,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/jquery-3.5.1.min.js"></script>
+			<script src="assets/app.js"></script>
 	</body>
 </html>

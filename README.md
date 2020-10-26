@@ -1,4 +1,5 @@
 This is my portfolio repository, feel free to poke around!
+View the live thing here: https://sam-morales.github.io
 
 # Template 
 Prologue by HTML5 UP
